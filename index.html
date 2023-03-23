@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="bg-primary-subtle">
+    <div class="container">
+        
+        <h2 class="text-danger text-center">Acquista Biglietto</h2>
+    
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome e Cognome</label>
+              <input type="text" class="form-control" id="nomePasseggero">
+            </div>
+            <div class="mb-3">
+              <label for="etaPasseggero" class="form-label">Età</label>
+              <input type="number" class="form-control" id="etaPasseggero">
+            </div>
+            <div class="mb-3">
+                <label for="kilometri" class="form-label">Km da percorrere</label>
+                <input type="number" class="form-control" id="kilometri">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="risultato()">Invio</button>
+            <button type="button" class="btn btn-light" onClick="window.location.reload();">Annulla</button>
+        
+
+        <div class="bg-light-subtle pt-2 mt-3 d-none" id="biglietto">
+            <h3 class="text-danger">Il Tuo biglietto</h3>
+            <div class="d-flex">
+                <div class="col bg-secondary">
+                    <h6 class="mb-3">Nome Passeggero</h6>
+                    <p id="nomeBiglietto" class="text-capitalize"></p>
+                </div>
+                <div class="col mx-1" id="offerta">
+                    <h6 class="mb-3">Offerta</h6>
+                    <p>Biglietto Standard</p>
+                </div>
+                <div class="col">
+                    <h6 class="mb-3">Carrozza</h6>
+                    <p id="carrozza"></p>
+                </div>
+                <div class="col mx-1">
+                    <h6 class="mb-3">Codice CP</h6>
+                    <p id="codiceCP"></p>
+                </div>
+                <div class="col">
+                    <h6 class="mb-3">Costo Biglietto</h6>
+                    <p id="costoBiglietto"></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
